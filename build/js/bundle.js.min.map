@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"bundle.js","sourcesContent":[]}
+{"version":3,"sources":["app.js"],"names":["searchForm","document","querySelector","onclick","classList","toggle"],"mappings":"AAAA,IAAAA,WAAAC,SAAAC,cAAA,gBAEAD,SAAAC,cAAA,eAAAC,QAAA,KACAH,WAAAI,UAAAC,OAAA","file":"bundle.js","sourcesContent":["let searchForm = document.querySelector('.search-form');\r\n\r\ndocument.querySelector('#search-btn').onclick = () => {\r\n    searchForm.classList.toggle('active');\r\n}"]}

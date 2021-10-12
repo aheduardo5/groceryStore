@@ -46,6 +46,7 @@
         }
     }
 
+    /*   SEARCH ICON   */
     .search-form {
         position: absolute;
         top: -115%;
@@ -61,7 +62,7 @@
         &.active {
             top: 115%;
         }
-        
+
         input {
             height: 100%;
             width: 100%;
@@ -81,7 +82,59 @@
                 color: $green;
             }
         }
-    }
+    } /*   END SEARCH ICON   */
+
+    /*  SHOPPING ICON   */
+    .shopping-cart {
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        border-radius: .5rem;
+        box-shadow: $box-shadow;
+        width: 35rem;
+        padding: 2rem;
+
+        .box {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            .fa-times {
+                position: absolute;
+                top: 50%;
+                right: 2rem;
+                transform: translateY(-50%);
+                font-size: 2rem;
+                color: $light-color;
+                cursor: pointer;
+    
+                &:hover {
+                    color: $green;
+                }
+            }
+
+            img {
+                height: 10rem;
+            }
+
+            .content {
+                h3 {
+                    font-size: 1.7rem;
+                    padding-bottom: .5rem;
+                    color: black;
+                }
+
+                span {
+                    font-size: 1.5rem;
+                    color: $light-color;
+                    &.multiply {
+                        margin: 0 .5rem;
+                    }
+                }
+            }
+        }
+    }/*  END SHOPPING ICON   */
 }
 
 #menu-btn {

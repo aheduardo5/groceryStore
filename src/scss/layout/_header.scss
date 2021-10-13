@@ -155,6 +155,74 @@
             width: 100%;
         }
     }/*  END SHOPPING ICON   */
+
+    /*     LOGIN FORM       */
+    .login-form {
+        position: absolute;
+        top:115%; 
+        right:-115rem;
+        background:$white;
+        border-radius: .5rem;
+        box-shadow: $box-shadow;
+        width:35rem;
+        padding:2rem;
+
+        &.active {
+            right: 2rem;
+            transition: .4s linear;
+        }
+        h3 {
+            color: black;
+            text-transform: uppercase;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: .7rem;
+        }
+
+        .box{
+            margin:.7rem 0;
+            border:$border;
+            padding:1rem 1.2rem;
+            font-size: 1.5rem;
+            color:$black;
+            text-transform: none;
+            width:100%;
+          }
+      
+          .remember{
+            display: flex;
+            align-items: center;
+            gap:.5rem;
+            margin:.7rem 0;
+
+            label{
+                font-size: 1.5rem;
+                color:$light-color;
+                cursor: pointer;
+              }
+        }
+
+        .btn {
+            margin: 1rem 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        p {
+            color: $light-color;
+            padding-top: .7rem;
+            font-size: 1.4rem;
+
+            a {
+                color: $green;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    /*     END LOGIN FORM       */
 }
 
 #menu-btn {

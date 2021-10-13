@@ -88,11 +88,16 @@
     .shopping-cart {
         position: absolute;
         top: 115%;
-        right: 2rem;
+        right: -105%;
         border-radius: .5rem;
         box-shadow: $box-shadow;
         width: 35rem;
         padding: 2rem;
+
+        &.active {
+            right: 2rem;
+            transition: .4s linear;
+        }
 
         .box {
             display: flex;
@@ -143,6 +148,11 @@
             span {
                 color: $black;
             }
+        }
+
+        .btn {
+            text-align: center;
+            width: 100%;
         }
     }/*  END SHOPPING ICON   */
 }

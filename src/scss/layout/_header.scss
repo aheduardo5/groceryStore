@@ -93,6 +93,7 @@
         box-shadow: $box-shadow;
         width: 35rem;
         padding: 2rem;
+        background: $white;
 
         &.active {
             right: 2rem;

@@ -4,6 +4,7 @@
 
 .footer {
     background: $light-bg;
+    padding: 2rem;
 
     .box-container {
         @include grid(25rem);

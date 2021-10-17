@@ -1,0 +1,67 @@
+@media (max-width: $desktop) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+
+}
+
+@media (max-width: $tablet) {
+
+    #menu-btn {
+        display: inline-block!important;
+    }
+
+    .search-form{
+        width: 100%;
+        right:0;
+        border-radius: 0;
+  
+        &.active{
+          top:99%;
+          border-top: $border;
+          border-bottom: $border;
+        }
+      }
+    
+
+    .header {
+        padding: 2rem;
+        .navbar {
+            position: absolute;
+            top: 99%;
+            left: 0;
+            right: 0;
+            background: $white;
+            border-top: $border;
+            border-bottom: $border;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+            &.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+
+            a{
+                margin: 1.5rem!important;
+                padding: 1.5rem;
+                background: $light-bg;
+                font-size: 2rem;
+                display: block;
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: $telefono) {
+    
+    html {
+        font-size: 50%;
+    }
+
+}

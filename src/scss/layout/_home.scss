@@ -1,7 +1,78 @@
 .home {
-    padding-top: 14rem;
-    background: url(/build/img/home-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  padding-top: 14rem;
+  background: url(/build/img/home-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .slides-container {
+    max-width: 95%;
+    .slide {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      display: none;
+
+      &.active {
+        display: flex;
+      }
+
+      .content {
+        flex: 1 1 40rem;
+        text-align: end;
+        animation: fadeLeft 0.3s linear 0.3s backwards;
+
+        span {
+          color: $light-color;
+          font-size: 2.5rem;
+        }
+
+        h3 {
+          font-size: 6rem;
+          color: $black;
+          padding: 0.5rem 0;
+        }
+      }
+
+      .image {
+        flex: 1 1 40rem;
+        margin: 3rem 0;
+
+        img {
+          width: 100%;
+          animation: fadeUp 0.4s linear;
+        }
+      }
+    }
+  } // slides-container ends
+
+  #next-slide,
+  #prev-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    box-shadow: $box-shadow;
+    text-align: center;
+    background: $white;
+    font-size: 2.5rem;
+    color: $black;
+    cursor: pointer;
+    opacity: 0.4;
+
+    &:hover {
+      background: $green;
+      color: $white;
+      opacity: 1;
+    }
+  }
+  #prev-slide {
+    left: 2rem;
+  }
+  #next-slide {
+    right: 2rem;
+  }
 }
